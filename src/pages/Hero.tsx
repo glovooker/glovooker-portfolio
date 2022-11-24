@@ -11,15 +11,24 @@ export const Home = () => {
   const { t } = useTranslation('home');
 
   return (
-    <div className='bg-gradient-to-tr from-glovooker-blue-100 via-glovooker-green-100 to-glovooker-chamoisee-100 flex relative z-20 items-center overflow-hidden h-screen'>
-      <div className='container mx-auto px-8 flex relative py-16'>
+    <div
+      id='hero'
+      className='bg-gradient-to-tr from-glovooker-blue-100 via-glovooker-green-100 to-glovooker-chamoisee-100 flex relative z-20 items-center overflow-hidden h-screen'
+    >
+      <div className='container mx-auto px-8 flex flex-col sm:flex-row relative py-16'>
+        <div className='block w-7/12 mt-20 mx-auto sm:hidden relative'>
+          <img
+            src={hero}
+            className='m-auto rounded-lg'
+          />
+        </div>
         <div className='sm:w-2/3 lg:w-2/5 flex flex-col relative z-20 mt-12'>
           <span className='w-20 h-2 bg-white mb-12'></span>
-          <h1 className='font-circularblack text-6xl sm:text-8xl font-black flex flex-col leading-none text-white'>
+          <h1 className='font-circularblack text-5xl sm:text-8xl font-black flex flex-col leading-none text-white'>
             Gabriel Lobo
           </h1>
           <TitleLoop />
-          <div className='flex mt-20'>
+          <div className='flex mt-10 sm:mt-20'>
             <Button
               label={`${t('about_me')}`}
               bgColor={'bg-glovooker-chamoisee-100'}

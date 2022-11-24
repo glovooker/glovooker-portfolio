@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { MouseEventHandler, useState } from 'react';
 import DropDown from '../DropDown/DropDown';
 import logo from '../../assets/img/logo.png';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import LanguageSwitch from '../LanguageSwitch/LanguageSwitch';
+import i18next from 'i18next';
 
 interface Props {
   forceMenuOpenInMobile?: boolean;
@@ -35,6 +37,15 @@ const Header = (props: Props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t } = useTranslation('header');
 
+  const languages: DDMItem[] = [
+    {
+      label: 'en',
+    },
+    {
+      label: 'es',
+    },
+  ];
+
   return (
     <div className='absolute z-50 w-screen'>
       <nav
@@ -66,17 +77,13 @@ const Header = (props: Props) => {
                       <Link
                         key={link.label}
                         to={link.link || '/'}
+                        className={`${
+                          link.isSelected ? 'text-white' : 'text-gray-300'
+                        }  hover:text-white px-3 py-2 rounded-md ${
+                          props.isFat ? 'text-lg' : 'text-md'
+                        } font-medium`}
                       >
-                        <a
-                          key={link.label}
-                          className={`${
-                            link.isSelected ? 'text-white' : 'text-gray-300'
-                          }  hover:text-white px-3 py-2 rounded-md ${
-                            props.isFat ? 'text-lg' : 'text-md'
-                          } font-medium`}
-                        >
-                          {link.label}
-                        </a>
+                        {link.label}
                       </Link>
                     );
                   })}
@@ -129,6 +136,8 @@ const Header = (props: Props) => {
               </div>
             </div>
 
+            <LanguageSwitch items={languages} />
+
             <div className='-mr-2 flex md:hidden'>
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -151,7 +160,23 @@ const Header = (props: Props) => {
 
         {(isMenuOpen || props.forceMenuOpenInMobile) && (
           <div className='md:hidden'>
-            <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'></div>
+            <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
+              {props.links?.map((link) => {
+                return (
+                  <Link
+                    key={link.label}
+                    to={link.link || '#'}
+                    className={`${
+                      link.isSelected
+                        ? 'text-white'
+                        : 'text-gray-300 hover:text-white'
+                    } block px-3 py-2 rounded-md text-base font-medium`}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
+            </div>
           </div>
         )}
       </nav>

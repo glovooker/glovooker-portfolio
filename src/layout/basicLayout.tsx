@@ -8,7 +8,7 @@ export const withBasicLayout = (Children: () => JSX.Element) => () => {
   const headerLinks: HeaderLink[] = [
     {
       label: `${t('home')}`,
-      link: '/',
+      link: '#hero',
     },
   ];
   return (
@@ -18,6 +18,7 @@ export const withBasicLayout = (Children: () => JSX.Element) => () => {
         hideGitHubLink={true}
         alignRight={true}
         isFat={true}
+        forceMenuOpenInMobile={false}
       />
       <main className='w-screen'>
         <Children />

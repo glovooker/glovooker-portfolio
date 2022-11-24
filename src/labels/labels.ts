@@ -3,6 +3,8 @@ const resources = {
     header: {
       logo_alt: 'Glovooker Logo',
       home: 'Inicio',
+      es: 'Español',
+      en: 'Inglés',
     },
     home: {
       title: 'Inicio',
@@ -19,6 +21,8 @@ const resources = {
     header: {
       logo_alt: 'Glovooker Logo',
       home: 'Home',
+      es: 'Spanish',
+      en: 'English',
     },
     home: {
       title: 'Home',

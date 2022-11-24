@@ -14,16 +14,14 @@ export const TitleLoop = () => {
   ];
 
   return (
-    <div>
-      <p className='font-circular mt-2 text-3xl text-white'>
-        <Typewriter
-          options={{
-            strings: titles,
-            autoStart: true,
-            loop: true,
-          }}
-        />
-      </p>
+    <div className='font-circular mt-2 text-xl sm:text-3xl text-white'>
+      <Typewriter
+        options={{
+          strings: titles,
+          autoStart: true,
+          loop: true,
+        }}
+      />
     </div>
   );
 };

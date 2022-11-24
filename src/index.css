@@ -1,3 +1,78 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'CircularStd', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'CircularStdBlack';
+  src: url('assets/fonts/CircularStd/CircularStd-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  font-feature-settings: 'ss01' on;
+}
+
+@font-face {
+  font-family: 'CircularStdBlack';
+  src: url('assets/fonts/CircularStd/CircularStd-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+  font-feature-settings: 'ss01' on;
+}
+
+@font-face {
+  font-family: 'CircularStdBold';
+  src: url('assets/fonts/CircularStd/CircularStd-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CircularStdBold';
+  src: url('assets/fonts/CircularStd/CircularStd-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  src: url('assets/fonts/CircularStd/CircularStd-Book.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  src: url('assets/fonts/CircularStd/CircularStd-BookItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'CircularStdMedium';
+  src: url('assets/fonts/CircularStd/CircularStd-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'CircularStdMedium';
+  src: url('assets/fonts/CircularStd/CircularStd-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}

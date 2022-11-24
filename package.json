@@ -20,17 +20,20 @@
     "i18next": "^22.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10",
     "react-i18next": "^12.0.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "redux-persist": "^6.0.0",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@types/react-redux": "^7.1.24",
+    "@types/react-typist": "^2.0.3",
     "@vitejs/plugin-react": "^2.2.0",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.19",

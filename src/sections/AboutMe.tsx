@@ -27,9 +27,14 @@ const AboutMe = (props: Props) => {
           <span className='block'>{t(props.title)}</span>
         </h2>
         {props.description &&
-          props.description.map((description) => {
+          props.description.map((description, index) => {
             return (
-              <p className={`text-lg mt-4 text-white`}>{t(description)}</p>
+              <p
+                key={'description_' + (index + 1)}
+                className={`text-lg mt-4 text-white`}
+              >
+                {t(description)}
+              </p>
             );
           })}
       </div>

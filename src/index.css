@@ -96,4 +96,24 @@ body {
   .scrollbar::-webkit-scrollbar-thumb:hover {
     background: #11123F;
   }
+
+  .scrollbar-tag::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+
+  .scrollbar-tag::-webkit-scrollbar-track {
+    padding-right: 5px;
+    background: transparent;
+  }
+
+  .scrollbar-tag::-webkit-scrollbar-thumb {
+    background: rgb(221, 221, 221);
+    border-radius: 100vh;
+
+  }
+
+  .scrollbar-tag::-webkit-scrollbar-thumb:hover {
+    background: rgb(221, 221, 221);
+  }
 }

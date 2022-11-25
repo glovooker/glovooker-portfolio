@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import withBasicLayout from '../layout/basicLayout';
 import AboutMe from '../sections/AboutMe';
 import Hero from '../sections/Hero';
+import Portfolio from '../sections/Portfolio';
 import Stats from '../sections/Stats';
 
 export type SectionsReferences = {
@@ -44,6 +45,7 @@ export const Home = () => {
         sectionsRef={sectionsRef}
         isLeft={true}
       />
+      <Portfolio />
     </div>
   );
 };

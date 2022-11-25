@@ -76,3 +76,24 @@ body {
   font-style: italic;
   font-display: swap;
 }
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 20px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    padding-right: 5px;
+    background: #11123F;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #18195a;
+
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #11123F;
+  }
+}

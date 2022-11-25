@@ -47,7 +47,7 @@ const Header = (props: Props) => {
   ];
 
   return (
-    <div className='absolute z-50 w-screen'>
+    <div className='absolute z-50 w-full'>
       <nav
         className={`bg-transparent ${props.withShadow ? ' shadow' : ''}${
           props.isFat ? ' py-4' : ''

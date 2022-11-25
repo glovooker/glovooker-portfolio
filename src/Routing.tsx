@@ -10,7 +10,7 @@ export type Pages = {
 
 export const pages: Pages = {
   home: {
-    component: React.lazy(() => import('./pages/Hero')),
+    component: React.lazy(() => import('./pages/Home')),
     path: '/',
   },
 };

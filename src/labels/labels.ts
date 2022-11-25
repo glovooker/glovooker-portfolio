@@ -16,6 +16,12 @@ const resources = {
       title_5: 'Estudiante de Excelencia de UCenfotec',
       title_6: 'Desarrollador Freelancer',
     },
+    stats: {
+      stats_1: 'Repositorios',
+      stats_2: 'Commits',
+      stats_3: 'Tecnologías',
+      stats_4: 'Pull Requests',
+    },
   },
   en: {
     header: {
@@ -33,6 +39,12 @@ const resources = {
       title_4: 'Project Manager',
       title_5: 'UCenfotec Ambassador',
       title_6: 'Freelancer Developer',
+    },
+    stats: {
+      stats_1: 'Repositories',
+      stats_2: 'Commits',
+      stats_3: 'Technologies',
+      stats_4: 'Pull Requests',
     },
   },
   fr: {},

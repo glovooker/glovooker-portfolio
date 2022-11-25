@@ -7,11 +7,11 @@ import { ChevronDown } from 'react-feather';
 import { TitleLoop } from '../components/TitleLoop/TitleLoop';
 import { useTranslation } from 'react-i18next';
 
-export const Home = () => {
+export const Hero = () => {
   const { t } = useTranslation('home');
 
   return (
-    <div
+    <section
       id='hero'
       className='bg-gradient-to-tr from-glovooker-blue-100 via-glovooker-green-100 to-glovooker-chamoisee-100 flex relative z-20 items-center overflow-hidden h-screen'
     >
@@ -55,8 +55,8 @@ export const Home = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default withBasicLayout(Home);
+export default Hero;

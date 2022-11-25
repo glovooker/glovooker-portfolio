@@ -28,6 +28,64 @@ const resources = {
       description_2: `Tras trabajar como Ingeniero de Software Interno en 3Pillar Global usando React, C# y ASP.NET MVC, con la ayuda del Marco de Trabajo de Agile, Scrum, en el camino (sí, también soy un Product Owner y Scrum Master certificado), actualmente estoy aprendiendo y construyendo mi conocimiento al lado de grandiosas personas en la carrera de Bachillerato en Ingeniería del Software en Universidad Cenfotec, mientras trabajo junto a más grandiosas personas en Mawi como Ingeniero de Software Freelancer Front End utilizando React y TypeScript.`,
       description_3: `Como fan de la tecnología y del conocimiento, si tienes una idea que pueda benificiarse de mis habilidades para hacerse realidad por medio de cualquiera de los medios previamente mencionados, te invito a revisar mi currículum o los proyectos que he dejado para ti en mi portafolio. ¡Siéntete libre de contactarme tan pronto como lo desees!`,
     },
+    portfolio: {
+      title: 'Portafolio',
+      description:
+        'Estos son algunos de los proyectos en los que he trabajado.',
+    },
+    projects: {
+      staries: {
+        title: 'Staries',
+        description:
+          'Aplicación web para crear y compartir historias interactivas.',
+      },
+      mobydygSite: {
+        title: 'MobyDyg Site',
+        description: `Sitio oficial de MobyDyg con internacionalización`,
+      },
+      mobydygCore: {
+        title: 'MobyDyg Client Core',
+        description: `Tienda digital de MobyDyg con tematización para clientes`,
+      },
+      mobydygBackoffice: {
+        title: 'MobyDyg Backoffice',
+        description: `Backoffice para administrar la tienda digital de MobyDyg`,
+      },
+      tournament: {
+        title: 'FCT Tournament App',
+        description:
+          'Aplicación de torneos para la Federación Costarricense de Taekwondo.',
+      },
+      moka: {
+        title: 'Moka: Vet & Hotel',
+        description:
+          'Aplicación web para el manejo de una veterinaria y un hotel para mascotas.',
+      },
+      tummy: {
+        title: 'Tummy',
+        description:
+          'Aplicación web para llevar el control del embarazo y el bebé, con consejos de acuerdo a las etapas y a las semanas.',
+      },
+      cleverSolutions: {
+        title: 'Clever Solutions Landing Page',
+        description:
+          'Landing page para Clever Solutions, una empresa ficticia para un curso de Proyecto de Software 1 de la UCenfotec',
+      },
+      personalBrand: {
+        title: 'Personal Brand',
+        description: 'Libro de marca para mi marca personal.',
+      },
+      iki: {
+        title: 'iki',
+        description:
+          'Concepto de aplicación para el control de las respiraciones y de la relajación.',
+      },
+      findingTheMeaning: {
+        title: 'Finding the Meaning Content Brand Book',
+        description:
+          'Libro de marca para Finding the Meaning, un podcast de UCenfotec.',
+      },
+    },
   },
   en: {
     header: {
@@ -57,6 +115,63 @@ const resources = {
       description_1: `As a matter of fact, I love both logical and creative worlds that merge together through tech. Every good idea has a back-end and a front-end waiting to be developed, and both of them are as breathtaking as the other to me.`,
       description_2: `Having worked as a Software Engineer Intern at 3Pillar Global using React, C#, ASP.NET MVC, with the help of Agile's Scrum Methodology on the way (yes, I'm also a certified Scrum Master and Product Owner), I'm currently learning and building my knowledge alongside great people through the Software Engineering Bachelor's Degree at Cenfotec, while working alongside more great people at Mawi as a Freelancer Front End Software Engineer using React and TypeScript.`,
       description_3: `As a fan of technology and knowledge, if you have an idea that could use my abilities to come to reality through any of the above-mentioned stuff, feel free to check out my CV or the projects I've left for you in my portfolio, and reach out to me as soon as you feel like it!`,
+    },
+    portfolio: {
+      title: 'Portfolio',
+      description:
+        'These are some of the projects I have worked on. Check them out!',
+    },
+    projects: {
+      staries: {
+        title: 'Staries',
+        description:
+          'Web application that allows you to create and share your own stories.',
+      },
+      mobydygSite: {
+        title: 'MobyDyg Site',
+        description: `MobyDyg's official website with internationalization.`,
+      },
+      mobydygCore: {
+        title: 'MobyDyg Client Core',
+        description: `MobyDyg's web store with theming per client.`,
+      },
+      mobydygBackoffice: {
+        title: 'MobyDyg Backoffice',
+        description: `MobyDyg's web store backoffice to handle store settings, orders, and more.`,
+      },
+      tournament: {
+        title: 'FCT Tournament App',
+        description:
+          'Tournament application for the Costa Rican Taekwondo Federation.',
+      },
+      moka: {
+        title: 'Moka: Vet & Hotel',
+        description:
+          'Web application for the management of a veterinary clinic and a hotel for pets.',
+      },
+      tummy: {
+        title: 'Tummy',
+        description:
+          'Web application that allows you to track your pregnancy cycle, with medical advices per week.',
+      },
+      cleverSolutions: {
+        title: 'Clever Solutions Landing Page',
+        description:
+          'Landing page for Clever Solutions, a fictitious company for UCenfotec Software Project.',
+      },
+      personalBrand: {
+        title: 'Personal Brand',
+        description: 'Content and brand book for my personal brand.',
+      },
+      iki: {
+        title: 'iki',
+        description: 'Breathing app concept that helps you relax and focus.',
+      },
+      findingTheMeaning: {
+        title: 'Finding the Meaning Content Brand Book',
+        description:
+          'Content and brand book for Finding the Meaning, an UCenfotec Podcast.',
+      },
     },
   },
   fr: {},

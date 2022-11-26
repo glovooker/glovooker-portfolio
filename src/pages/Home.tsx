@@ -15,6 +15,7 @@ export type SectionsReferences = {
 export const Home = () => {
   const heroRef = useRef<HTMLElement>(null);
   const aboutMeRef = useRef<HTMLElement>(null);
+  const portfolioRef = useRef<HTMLElement>(null);
 
   const sectionsRef: SectionsReferences = {
     heroRef: {
@@ -29,6 +30,12 @@ export const Home = () => {
         aboutMeRef.current?.scrollIntoView({ behavior: 'smooth' });
       },
     },
+    portfolioRef: {
+      ref: portfolioRef,
+      scrollTo: () => {
+        portfolioRef.current?.scrollIntoView({ behavior: 'smooth' });
+      },
+    },
   };
 
   return (
@@ -40,12 +47,12 @@ export const Home = () => {
       <Stats />
       <AboutMe
         title={'title'}
-        description={['description_1', 'description_2', 'description_3']}
+        description={['description_1', 'description_2']}
         reference={aboutMeRef}
         sectionsRef={sectionsRef}
         isLeft={true}
       />
-      <Portfolio />
+      <Portfolio reference={portfolioRef} />
     </div>
   );
 };

@@ -1,13 +1,11 @@
 import hero from '../assets/img/about-me.gif';
 import { Button } from '../components/Button/Button';
-import { GitHub } from 'react-feather';
-import { Linkedin } from 'react-feather';
 import { ChevronDown } from 'react-feather';
 import { TitleLoop } from '../components/TitleLoop/TitleLoop';
 import { useTranslation } from 'react-i18next';
-import { Navigate } from 'react-router-dom';
 import { RefObject } from 'react';
 import { SectionsReferences } from '../pages/Home';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 interface Props {
   reference: RefObject<HTMLElement>;
@@ -40,20 +38,24 @@ export const Hero = (props: Props) => {
             <Button
               label={`${t('about_me')}`}
               bgColor={'bg-glovooker-chamoisee-100'}
-              icon={<ChevronDown className='ml-2' />}
               onClick={props.sectionsRef.aboutMeRef.scrollTo}
+            />
+            <Button
+              label={`${t('my_projects')}`}
+              bgColor={'bg-glovooker-green-100'}
+              onClick={props.sectionsRef.portfolioRef.scrollTo}
             />
             <Button
               onClick={() => window.open('https://github.com/glovooker')}
               bgColor={'bg-[#171515]'}
-              icon={<GitHub />}
+              icon={<FaGithub className='h-8 w-8' />}
             />
             <Button
               onClick={() =>
                 window.open('https://www.linkedin.com/in/glovooker/')
               }
               bgColor={'bg-[#0077B5]'}
-              icon={<Linkedin />}
+              icon={<FaLinkedin className='h-8 w-8' />}
             />
           </div>
         </div>

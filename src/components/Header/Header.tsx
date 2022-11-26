@@ -1,4 +1,4 @@
-import React, { MouseEventHandler, useState } from 'react';
+import React, { MouseEventHandler, useEffect, useRef, useState } from 'react';
 import DropDown from '../DropDown/DropDown';
 import logo from '../../assets/img/logo.png';
 import { useTranslation } from 'react-i18next';
@@ -37,6 +37,22 @@ const Header = (props: Props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t } = useTranslation('header');
 
+  const [navBackground, setNavBackground] = useState('bg-transparent');
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 170;
+      if (show) {
+        setNavBackground('bg-glovooker-blue-100');
+      } else {
+        setNavBackground('bg-transparent');
+      }
+    };
+    document.addEventListener('scroll', handleScroll);
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const languages: DDMItem[] = [
     {
       label: 'en',
@@ -47,9 +63,9 @@ const Header = (props: Props) => {
   ];
 
   return (
-    <div className='absolute z-50 w-full'>
+    <div className='fixed z-40 w-full'>
       <nav
-        className={`bg-transparent ${props.withShadow ? ' shadow' : ''}${
+        className={`${navBackground} ${props.withShadow ? ' shadow' : ''}${
           props.isFat ? ' py-4' : ''
         } `}
       >
@@ -70,7 +86,7 @@ const Header = (props: Props) => {
                   alt={`${t('logo_alt')}`}
                 />
               </Link>
-              <div className='hidden md:block'>
+              <div className='hidden'>
                 <div className='ml-10 flex items-baseline space-x-4'>
                   {props.links?.map((link) => {
                     return (
@@ -138,7 +154,7 @@ const Header = (props: Props) => {
 
             <LanguageSwitch items={languages} />
 
-            <div className='-mr-2 flex md:hidden'>
+            <div className='-mr-2 hidden'>
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className={`text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none`}

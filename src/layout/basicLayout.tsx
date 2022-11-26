@@ -12,7 +12,7 @@ export const withBasicLayout = (Children: () => JSX.Element) => () => {
     },
   ];
   return (
-    <div className='flex min-w-screen min-h-screen'>
+    <div className='flex min-w-screen min-h-screen overflow-x-hidden'>
       <Header
         links={headerLinks}
         hideGitHubLink={true}

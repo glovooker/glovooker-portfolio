@@ -6,7 +6,7 @@ import aboutMe2 from '../assets/img/about-me-2.gif';
 import aboutMe3 from '../assets/img/about-me-3.gif';
 import { Button } from '../components/Button/Button';
 import { FiDownload } from 'react-icons/fi';
-import resume from '../assets/resume.pdf';
+import resume from '../assets/Resume.pdf';
 
 interface Props {
   title: string;

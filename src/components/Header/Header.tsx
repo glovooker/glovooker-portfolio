@@ -63,7 +63,7 @@ const Header = (props: Props) => {
   ];
 
   return (
-    <div className='fixed z-50 w-full'>
+    <div className='fixed z-40 w-full'>
       <nav
         className={`${navBackground} ${props.withShadow ? ' shadow' : ''}${
           props.isFat ? ' py-4' : ''
@@ -86,7 +86,7 @@ const Header = (props: Props) => {
                   alt={`${t('logo_alt')}`}
                 />
               </Link>
-              <div className='hidden md:block'>
+              <div className='hidden'>
                 <div className='ml-10 flex items-baseline space-x-4'>
                   {props.links?.map((link) => {
                     return (
@@ -154,7 +154,7 @@ const Header = (props: Props) => {
 
             <LanguageSwitch items={languages} />
 
-            <div className='-mr-2 flex md:hidden'>
+            <div className='-mr-2 hidden'>
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className={`text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none`}

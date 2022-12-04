@@ -45,18 +45,20 @@ export const Hero = (props: Props) => {
               bgColor={'bg-glovooker-green-100'}
               onClick={props.sectionsRef.portfolioRef.scrollTo}
             />
-            <Button
-              onClick={() => window.open('https://github.com/glovooker')}
-              bgColor={'bg-[#171515]'}
-              icon={<FaGithub className='h-8 w-8' />}
-            />
-            <Button
-              onClick={() =>
-                window.open('https://www.linkedin.com/in/glovooker/')
-              }
-              bgColor={'bg-[#0077B5]'}
-              icon={<FaLinkedin className='h-8 w-8' />}
-            />
+            <div className='hidden md:flex'>
+              <Button
+                onClick={() => window.open('https://github.com/glovooker')}
+                bgColor={'bg-[#171515]'}
+                icon={<FaGithub className='h-8 w-8' />}
+              />
+              <Button
+                onClick={() =>
+                  window.open('https://www.linkedin.com/in/glovooker/')
+                }
+                bgColor={'bg-[#0077B5]'}
+                icon={<FaLinkedin className='h-8 w-8' />}
+              />
+            </div>
           </div>
         </div>
         <div className='hidden sm:block sm:w-1/3 lg:w-3/5 relative'>

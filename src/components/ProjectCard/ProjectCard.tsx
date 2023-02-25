@@ -56,7 +56,7 @@ const ProjectCard = ({
           <p className='text-gray-800 text-2xl font-circularblack mb-2'>
             {t(title)}
           </p>
-          <p className='text-gray-400 font-light text-md'>{t(desc)}</p>
+          <p className='text-gray-400 font-light h-20 text-md'>{t(desc)}</p>
           {showTags && (
             <div className='flex justify-starts items-center mt-4 overflow-x-auto scrollbar-tag pb-2'>
               {tags?.map((tag) => {

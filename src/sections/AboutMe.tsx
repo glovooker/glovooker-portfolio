@@ -26,7 +26,9 @@ const AboutMe = (props: Props) => {
       className={`bg-glovooker-green-100 overflow-hidden relative lg:flex lg:items-center`}
     >
       <div className={`py-12 px-16 md:px-8 lg:py-20 lg:px-20 z-20 max-w-4xl`}>
-        <h2 className={`text-4xl font-circularblack text-white mb-10`}>
+        <h2
+          className={`text-3xl md:text-4xl font-circularblack text-white mb-10`}
+        >
           <span className='block'>{t(props.title)}</span>
         </h2>
         {props.description &&

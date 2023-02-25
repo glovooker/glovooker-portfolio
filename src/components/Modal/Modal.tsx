@@ -32,9 +32,9 @@ const Modal = ({ projectIndex, open, onClose }: ModalProps) => {
       >
         <div
           ref={modalRef}
-          className='relative w-10/12 md:w-[70vw] bg-white rounded-2xl shadow-lg p-6 max-h-[80vh] lg:px-[4vw] lg:py-[4vh] overflow-y-scroll scrollbar-tag'
+          className='flex w-10/12 md:w-[70vw] bg-white rounded-2xl shadow-lg p-6 h-[80vh] lg:px-[4vw] lg:py-[4vh] overflow-y-scroll scrollbar-tag'
         >
-          <div className='relative'>
+          <div className='flex'>
             <div className='lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center'>
               <div className='block md:hidden my-5 lg:-mx-4 relative relative-20 lg:-my-4 lg:col-start-1'>
                 <div className='relative space-y-4'>

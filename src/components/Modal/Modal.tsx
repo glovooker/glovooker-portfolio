@@ -7,6 +7,7 @@ import Avatars from '../Avatars/Avatars';
 import { FaGithub, FaFigma } from 'react-icons/fa';
 import { Button } from '../Button/Button';
 import { FiExternalLink } from 'react-icons/fi';
+import { useHorizontalScroll } from '../../hooks/useHorizontalScroll';
 
 type ModalProps = {
   projectIndex: number;
@@ -23,6 +24,9 @@ const Modal = ({ projectIndex, open, onClose }: ModalProps) => {
   useOutsideClick(modalRef, onClose);
 
   open ? lockScroll() : unlockScroll();
+
+  const targetRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useHorizontalScroll();
 
   return open ? (
     <div className='flex fixed inset-0 justify-center  z-50'>
@@ -137,7 +141,10 @@ const Modal = ({ projectIndex, open, onClose }: ModalProps) => {
               </div>
 
               <div className='hidden md:block mt-10 lg:-mx-4 relative relative-20 lg:mt-0 lg:col-start-1'>
-                <div className='relative space-y-4'>
+                <div
+                  className='relative space-y-4'
+                  ref={targetRef}
+                >
                   <div className='flex items-end justify-center lg:justify-center'>
                     <img
                       className='rounded-lg shadow-lg w-56 md:w-96 md:max-h-64 object-cover'
@@ -146,7 +153,10 @@ const Modal = ({ projectIndex, open, onClose }: ModalProps) => {
                       alt={currentProject.title + 'Cover'}
                     />
                   </div>
-                  <div className='hidden md:flex items-start justify-center lg:justify-start space-x-4 ml-12 overflow-auto scrollbar-tag px-2'>
+                  <div
+                    ref={scrollRef}
+                    className='hidden md:flex items-start justify-center lg:justify-start space-x-4 ml-12 overflow-auto scrollbar-tag px-2'
+                  >
                     {currentProject?.projectImg?.map((img, index) => {
                       return (
                         <img

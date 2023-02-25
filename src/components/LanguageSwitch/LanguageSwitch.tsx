@@ -12,7 +12,7 @@ const LanguageSwitch = (props: Props) => {
   const { t } = useTranslation('header');
 
   const [showList, setShowList] = useState(false);
-  const [selectedItem, setSelectedItem] = useState<DDMItem>(props.items[1]);
+  const [selectedItem, setSelectedItem] = useState<DDMItem>(props.items[0]);
   const panelResultElement = useRef<HTMLDivElement>(null);
   const selectButton = useRef<HTMLButtonElement>(null);
   const handleClickOutside = useCallback((event: any) => {

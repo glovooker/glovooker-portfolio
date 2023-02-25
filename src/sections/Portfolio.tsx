@@ -15,7 +15,7 @@ const Portfolio = ({ withSearch = false, reference }: PortfolioProps) => {
   return (
     <section
       ref={reference}
-      className='w-full bg-glovooker-blue-100 p-12'
+      className='w-full bg-glovooker-blue-100 p-10'
     >
       <div className='header font-circularblack flex items-end justify-between mb-12'>
         <div className='title'>
@@ -31,7 +31,7 @@ const Portfolio = ({ withSearch = false, reference }: PortfolioProps) => {
           </div>
         )} */}
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12'>
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-12'>
         {PROJECTS.map((PROJECT, index) => {
           return (
             <ProjectCard

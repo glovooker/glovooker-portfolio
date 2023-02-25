@@ -40,11 +40,13 @@ const Header = (props: Props) => {
   const [navBackground, setNavBackground] = useState('bg-transparent');
   useEffect(() => {
     const handleScroll = () => {
-      const show = window.scrollY > 170;
+      const show = window.scrollY > 10;
       if (show) {
-        setNavBackground('bg-glovooker-blue-100');
+        setNavBackground(
+          'transition ease-in-out delay-50 bg-glovooker-blue-100'
+        );
       } else {
-        setNavBackground('bg-transparent');
+        setNavBackground('transition ease-in-out delay-50 bg-transparent');
       }
     };
     document.addEventListener('scroll', handleScroll);

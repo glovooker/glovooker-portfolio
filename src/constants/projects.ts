@@ -1,3 +1,17 @@
+import engage360Cover from '../assets/img/projects/engage360.jpg';
+
+import easylistCover from '../assets/img/projects/easylist.jpg';
+import easylist1 from '../assets/img/projects/easylist/1.jpeg';
+import easylist2 from '../assets/img/projects/easylist/2.jpeg';
+import easylist3 from '../assets/img/projects/easylist/3.png';
+
+import cenfotecoKingdomCover from '../assets/img/projects/cenfoteco-kingdoms.jpg';
+import cenfotecoKingdom1 from '../assets/img/projects/cenfoteco-kingdoms/1.png';
+import cenfotecoKingdom2 from '../assets/img/projects/cenfoteco-kingdoms/2.png';
+import cenfotecoKingdom3 from '../assets/img/projects/cenfoteco-kingdoms/3.png';
+
+import elViejoCover from '../assets/img/projects/el-viejo.jpg';
+
 import mawiCover from '../assets/img/projects/mawi.jpg';
 import mawi1 from '../assets/img/projects/mawi/1.png';
 import mawi2 from '../assets/img/projects/mawi/2.png';
@@ -91,7 +105,7 @@ type ProjectList = {
   longDesc: string;
   textColor: string;
   tagsBgColor: string;
-  projectImg: string[];
+  projectImg?: string[];
   contributors: Avatar[];
   previewLink?: string;
   githubLink?: string;
@@ -100,7 +114,80 @@ type ProjectList = {
 
 export const PROJECTS: ProjectList[] = [
   {
-    tags: [tags.react, tags.typescript, tags.figma],
+    tags: [tags.react, tags.typescript, tags.materialui, tags.graphql, tags.apollo, tags.dgraph],
+    title: 'engage360.title',
+    categ: 'SOFT · UI/UX',
+    coverImg: engage360Cover,
+    desc: 'engage360.description',
+    longDesc: 'engage360.long_description',
+    textColor: 'text-[#0574b9]',
+    tagsBgColor: 'bg-[#0574b9]',
+    contributors: [
+      contributors.glovooker,
+      contributors.woodsoul,
+      contributors.marceloAlbacete,
+    ],
+    previewLink: 'https://www.ivacus.com/soluciones',
+  },
+  {
+    tags: [tags.html, tags.css, tags.javascript, tags.jquery, tags.bootstrap, tags.csharp, tags.dotnet, tags.sqlserver, tags.azuredevops],
+    title: 'easylist.title',
+    categ: 'SOFT · UI/UX · DES',
+    coverImg: easylistCover,
+    desc: 'easylist.description',
+    longDesc: 'easylist.long_description',
+    textColor: 'text-[#80AAA0]',
+    tagsBgColor: 'bg-[#80AAA0]',
+    projectImg: [easylist1, easylist2, easylist3],
+    contributors: [
+      contributors.glovooker,
+      contributors.forlucho,
+      contributors.bistec,
+      contributors.keylorGomez,
+      contributors.isaacSandoval,
+    ],
+    githubLink: 'https://github.com/glovooker/easylist',
+  },
+  {
+    tags: [tags.java],
+    title: 'cenfotecoKingdoms.title',
+    categ: 'SOFT · DES',
+    coverImg: cenfotecoKingdomCover,
+    desc: 'cenfotecoKingdoms.description',
+    longDesc: 'cenfotecoKingdoms.long_description',
+    textColor: 'text-[#816077]',
+    tagsBgColor: 'bg-[#816077]',
+    projectImg: [cenfotecoKingdom1, cenfotecoKingdom2, cenfotecoKingdom3],
+    contributors: [
+      contributors.glovooker,
+      contributors.woodsoul,
+      contributors.saturnxs,
+      contributors.bistec,
+      contributors.jocselynAguilar,
+      contributors.marcosSaenz,
+      contributors.sebastianLopez,
+    ],
+    githubLink: 'https://github.com/glovooker/cenfoteco-kingdoms',
+  },
+  {
+    tags: [tags.mathematica, tags.react, tags.typescript, tags.redux, tags.materialui],
+    title: 'elViejo.title',
+    categ: 'RESEARCH · DATA · SOFT',
+    coverImg: elViejoCover,
+    desc: 'elViejo.description',
+    longDesc: 'elViejo.long_description',
+    textColor: 'text-[#85c651]',
+    tagsBgColor: 'bg-[#85c651]',
+    contributors: [
+      contributors.glovooker,
+      contributors.woodsoul,
+      contributors.tomasDeCamino,
+      contributors.luisNaranjo,
+    ],
+    previewLink: 'https://www.azucareraelviejo.com/es/noticias/cenfotec-y-azucarera-el-viejo-se-alian-en-programa-de-investigacion-para-impulsar',
+  },
+  {
+    tags: [tags.react, tags.typescript, tags.tailwind, tags.redux, tags.figma],
     title: 'mawi.title',
     categ: 'SOFT · UI/UX',
     coverImg: mawiCover,
@@ -114,6 +201,7 @@ export const PROJECTS: ProjectList[] = [
       contributors.sergioMonge,
       contributors.arielMontero,
     ],
+    previewLink: 'https://managers.mawi.io/'
   },
   {
     tags: [tags.react, tags.typescript, tags.nodejs, tags.firebase, tags.figma],

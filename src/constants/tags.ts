@@ -6,6 +6,8 @@ import {
   FaCss3Alt,
   FaNodeJs,
   FaPhp,
+  FaBootstrap,
+  FaJava,
 } from 'react-icons/fa';
 import {
   SiTypescript,
@@ -16,6 +18,15 @@ import {
   SiMongodb,
   SiFirebase,
   SiSass,
+  SiGraphql,
+  SiApollographql,
+  SiDgraph,
+  SiMaterialui,
+  SiAzuredevops,
+  SiWolframmathematica,
+  SiRedux,
+  SiTailwindcss,
+  SiJquery,
 } from 'react-icons/si';
 import { GrMysql } from 'react-icons/gr';
 import { DiJavascript1 } from 'react-icons/di';
@@ -49,11 +60,41 @@ export const tags: TagList = {
     tagBgColor: 'bg-[#efd81d]',
     tagIcon: DiJavascript1,
   },
+  jquery: {
+    tagName: 'jQuery',
+    tagColor: '#0769ad',
+    tagBgColor: 'bg-[#0769ad]',
+    tagIcon: SiJquery,
+  },
+  bootstrap: {
+    tagName: 'Bootstrap',
+    tagColor: '#7952b3',
+    tagBgColor: 'bg-[#7952b3]',
+    tagIcon: FaBootstrap,
+  },
+  tailwind: {
+    tagName: 'Tailwind CSS',
+    tagColor: '#06b6d4',
+    tagBgColor: 'bg-[#06b6d4]',
+    tagIcon: SiTailwindcss,
+  },
   react: {
     tagName: 'React',
     tagColor: '#61dbfb',
     tagBgColor: 'bg-[#61dbfb]',
     tagIcon: FaReact,
+  },
+  redux: {
+    tagName: 'Redux',
+    tagColor: '#764abc',
+    tagBgColor: 'bg-[#764abc]',
+    tagIcon: SiRedux,
+  },
+  materialui: {
+    tagName: 'Material UI',
+    tagColor: '#0a58ad',
+    tagBgColor: 'bg-[#0a58ad]',
+    tagIcon: SiMaterialui,
   },
   angular: {
     tagName: 'Angular',
@@ -79,11 +120,35 @@ export const tags: TagList = {
     tagBgColor: 'bg-[#FF9900]',
     tagIcon: SiAmazonaws,
   },
+  azuredevops: {
+    tagName: 'Azure DevOps',
+    tagColor: '#007acc',
+    tagBgColor: 'bg-[#007acc]',
+    tagIcon: SiAzuredevops,
+  },
   typescript: {
     tagName: 'TypeScript',
     tagColor: '#007acc',
     tagBgColor: 'bg-[#007acc]',
     tagIcon: SiTypescript,
+  },
+  graphql: {
+    tagName: 'GraphQL',
+    tagColor: '#e535ab',
+    tagBgColor: 'bg-[#e535ab]',
+    tagIcon: SiGraphql,
+  },
+  apollo: {
+    tagName: 'Apollo',
+    tagColor: '#311C87',
+    tagBgColor: 'bg-[#311C87]',
+    tagIcon: SiApollographql,
+  },
+  dgraph: {
+    tagName: 'Dgraph',
+    tagColor: '#f62d58',
+    tagBgColor: 'bg-[#f62d58]',
+    tagIcon: SiDgraph,
   },
   csharp: {
     tagName: 'C#',
@@ -126,6 +191,18 @@ export const tags: TagList = {
     tagColor: '#4e2acd',
     tagBgColor: 'bg-[#4e2acd]',
     tagIcon: SiDotnet,
+  },
+  java: {
+    tagName: 'Java',
+    tagColor: '#f89820',
+    tagBgColor: 'bg-[#f89820]',
+    tagIcon: FaJava,
+  },
+  mathematica: {
+    tagName: 'Wolfram Mathematica',
+    tagColor: '#e32004',
+    tagBgColor: 'bg-[#e32004]',
+    tagIcon: SiWolframmathematica,
   },
   figma: {
     tagName: 'Figma',

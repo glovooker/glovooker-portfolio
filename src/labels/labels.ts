@@ -35,7 +35,35 @@ const resources = {
         'Estos son algunos de los proyectos en los que he trabajado. ¡Haz click en cualquiera de ellos para ver más detalles!',
     },
     projects: {
-      check_it_out: '¡Pruébalo aquí!',
+      check_it_out: '¡Míralo aquí!',
+      engage360: {
+        title: 'Engage360',
+        description:
+          'Multiplataforma empresarial para la gestión y optimización de procesos y operaciones organizacionales',
+        long_description:
+          'Multiplataforma empresarial para la gestión y optimización de procesos y operaciones organizacionales. Participé como Ingeniero Full Stack trabajando con tecnologías como React, TypeScript, Material UI, GraphQL, Dgraph y Apollo, contribuyendo al desarrollo de nuevas funcionalidades para el módulo de CRM y gestión de campañas de correo electrónico masivo, y al mantenimiento de la plataforma.',
+      },
+      easylist: {
+        title: 'EasyList',
+        description:
+          'Sistema de adjudicación de licitaciones para escuelas de Costa Rica',
+        long_description:
+          'Sistema de adjudicación de licitaciones para suministrar recursos educativos a escuelas públicas de Costa Rica. Participé en el desarrollo de la plataforma como Tech Lead y Full Stack Developer utilizando HTML, CSS, JavaScript, Bootstrap, C#, .NET Core y SQL Server. Además, he contribuido en la toma de decisiones relacionadas con diseño y programación de interfaces para la plataforma. Fue un proyecto universitario aplaudido por los profesores y se lanzó su primera versión en el primer cuatrimestre del 2023.',
+      },
+      cenfotecoKingdoms: {
+        title: 'Cenfoteco Kingdoms',
+        description:
+          'Videojuego de rol y de dados medieval para la comunidad de UCenfotec',
+        long_description:
+          'Videojuego de rol y de dados medieval para la comunidad de UCenfotec, construido con Java y libGDX, aplicando más de 9 patrones de diseño diferentes. Proyecto universitario aplaudido por el profesor encargado y presentado durante la feria de tecnología Maker Faire 2023. Participé de lleno en la construcción de los visuales del juego, la programación y la implementación de los diversos patrones de diseño utilizados. El juego se lanzó en el primer cuatrimestre del 2023.',
+      },
+      elViejo: {
+        title: 'Azucarera El Viejo',
+        description:
+          'Programa de investigación y desarrollo para la optimización de procesos de producción de azúcar en Costa Rica',
+        long_description:
+          'Programa de investigación y desarrollo para la optimización de procesos de producción de azúcar en Costa Rica. Participé como Ingeniero Full Stack trabajando con tecnologías como React, TypeScript, Redux, React Native, y Material UI, para el desarrollo de un aplicativo móvil para el control de registros por horas. Así mismo, apoyé en la parte investigativa del proyecto, utilizando Wolfram Mathematica para realizar cálculos y análisis de datos para optimizar procesos de producción.',
+      },
       mawi: {
         title: 'Mawi Managers',
         description:
@@ -154,7 +182,35 @@ const resources = {
         'These are some of the projects I have worked on. Check them out!',
     },
     projects: {
-      check_it_out: 'Check it out!',
+      check_it_out: 'Check this out!',
+      engage360: {
+        title: 'Engage360',
+        description:
+          'Enterprise multiplatform solution for management and optimization of organizational processes',
+        long_description:
+          'Enterprise multiplatform solution for management and optimization of organizational processes and operations. I participated as a Full Stack Engineer working with technologies like React, TypeScript, Material UI, GraphQL, Dgraph, and Apollo, contributing to the development of new features for the CRM module and massive email campaigns, and to the maintenance of the platform.',
+      },
+      easylist: {
+        title: 'EasyList',
+        description:
+          'Web solution to bid for tenders to supply educational resources to public schools in Costa Rica',
+        long_description:
+          'Web solution to bid for tenders to supply educational resources to public schools in Costa Rica. I have participated as a Tech Lead and Full Stack Developer, working with HTML, CSS, JavaScript, Bootstrap, C#, .NET Core and SQL Server, contributing to the web application development and to the decision-making process of the team in matters related to the design and development of interfaces for the platform. This was a college level project praised by the teachers with a top grade, its first version was launched in the first period of 2023.',
+      },
+      cenfotecoKingdoms: {
+        title: 'Cenfoteco Kingdoms',
+        description:
+          'Medieval role-playing and dice videogame for the UCenfotec community',
+        long_description:
+          'Medieval role-playing and dice videogame for the UCenfotec community, built with Java and libGDX, applying more than 9 different design patterns. College level project praised by the teacher in charge and presented during the Maker Faire 2023 technology fair. I participated fully in the construction of the game visuals, programming and implementation of the various design patterns used. The game was launched in the first period of 2023.',
+      },
+      elViejo: {
+        title: 'Azucarera El Viejo',
+        description:
+          'Research and development college program for the optimization of sugar production processes in Costa Rica',
+        long_description:
+          'Research and development college program for the optimization of sugar production processes in Costa Rica by Universidad Cenfotec. I participated as a Full Stack Engineer working with technologies like React, TypeScript, Redux, React Native, and Material UI, contributing to the development of a mobile application to track hourly records. In addition, I helped in the research part of the project, using Wolfram Mathematica to perform calculations and data analysis to optimize production operations.',
+      },
       mawi: {
         title: 'Mawi Managers',
         description:
@@ -167,7 +223,7 @@ const resources = {
         description:
           'Web application that allows you to create and share your own stories',
         long_description:
-          'I worked on this project during my second year of my high school level technician, initially using PHP to handle the backend, and then migrating to Node.js with Firebase. I acted as a Product Owner and Developer within the team, which has had several members throughout the time it was developed. Currently, three members of the team are migrating the frontend to React with Typescript. This project consists of a web application that allows young writers and students to share poems, novels, and short stories to get their names out as authors of the current era.',
+          'I worked on this project during my second year of my high school level software development degree, initially using PHP to handle the backend, and then migrating to Node.js with Firebase. I acted as a Product Owner and Developer within the team, which has had several members throughout the time it was developed. Currently, three members of the team are migrating the frontend to React with Typescript. This project consists of a web application that allows young writers and students to share poems, novels, and short stories to get their names out as authors of the current era.',
       },
       mobydygSite: {
         title: 'MobyDyg Site',

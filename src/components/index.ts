@@ -1,6 +1,6 @@
 export * from './Avatars/Avatars';
 export * from './Button/Button';
-export * from './Dropdowndsa/Dropdown';
+export * from './Dropdown/Dropdown';
 export * from './IconButton/IconButton';
 export * from './LanguageSwitch/LanguageSwitch';
 export * from './Modal/Modal';

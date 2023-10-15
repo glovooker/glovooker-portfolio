@@ -21,12 +21,12 @@ import {
   SiGraphql,
   SiApollographql,
   SiDgraph,
-  SiMaterialui,
   SiAzuredevops,
   SiWolframmathematica,
   SiRedux,
   SiTailwindcss,
   SiJquery,
+  SiMaterialui,
 } from 'react-icons/si';
 import { GrMysql } from 'react-icons/gr';
 import { DiJavascript1 } from 'react-icons/di';

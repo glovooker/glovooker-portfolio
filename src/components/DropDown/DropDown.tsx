@@ -9,14 +9,14 @@ interface Props {
   withBackground?: boolean;
 }
 
-export interface DDMItem {
+interface DDMItem {
   icon?: JSX.Element;
   label: string;
   desc?: string;
   link?: string;
 }
 
-export const Dropdown = ({
+const Dropdown = ({
   forceOpen = false,
   label,
   withDivider,
@@ -85,3 +85,6 @@ export const Dropdown = ({
     </div>
   );
 };
+
+export { Dropdown };
+export type { DDMItem };

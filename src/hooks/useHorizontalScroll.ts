@@ -1,6 +1,6 @@
 import { RefObject, useEffect, useRef } from 'react';
 
-export function useHorizontalScroll(
+export function useHorizontalScroll (
   refTarget: RefObject<HTMLElement> = { current: document.body }
 ): RefObject<HTMLDivElement> {
   const elementRef = useRef<HTMLDivElement>(null);
@@ -9,21 +9,21 @@ export function useHorizontalScroll(
     const element = elementRef.current;
     const target = refTarget.current;
 
-    if (element && target) {
-      const onWheel = (e: WheelEvent) => {
-        if (e.deltaY === 0) return;
-        e.preventDefault();
-        const delta = Math.max(-1, Math.min(1, e.deltaY));
-        element.scrollTo({
-          left: element.scrollLeft + delta * 200,
-          behavior: 'smooth',
-        });
-      };
+    if (!element || !target) return;
 
-      target.addEventListener('wheel', onWheel);
+    const onWheel = (e: WheelEvent) => {
+      if (e.deltaY === 0) return;
+      e.preventDefault();
+      const delta = Math.max(-1, Math.min(1, e.deltaY));
+      element.scrollTo({
+        left: element.scrollLeft + delta * 200,
+        behavior: 'smooth',
+      });
+    };
 
-      return () => target.removeEventListener('wheel', onWheel);
-    }
+    target.addEventListener('wheel', onWheel);
+
+    return () => target.removeEventListener('wheel', onWheel);
   }, [refTarget]);
 
   return elementRef;

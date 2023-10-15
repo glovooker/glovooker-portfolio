@@ -50,18 +50,18 @@ const LanguageSwitch = (props: Props) => {
       <div className='mt-1 ml-10 relative'>
         <button
           type='button'
-          ref={selectButton}
-          onClick={() => setShowList(!showList)}
-          className='relative w-full bg-transparent rounded-md pl-3 pr-10 py-3 text-right border-2 border-gray-300 text-gray-300 focus:border-white cursor-default sm:text-md'
+          ref={ selectButton }
+          onClick={ () => setShowList(!showList) }
+          className='relative w-full bg-transparent rounded-md pl-3 pr-10 py-3 text-right border-2 border-white text-white focus:border-gray-300 focus:text-gray-300 cursor-pointer sm:text-md'
         >
           <span className='flex items-center justify-end'>
             <span className='ml-3 block truncate'>
-              {t(selectedItem?.label)}
+              { t(selectedItem?.label) }
             </span>
           </span>
           <span className='ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none'>
             <svg
-              className='h-5 w-5 text-gray-300'
+              className='h-5 w-5 text-white focus:text-gray-300'
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 20 20'
               fill='currentColor'
@@ -76,38 +76,38 @@ const LanguageSwitch = (props: Props) => {
           </span>
         </button>
 
-        {(showList || props.forceOpen) && (
+        { (showList || props.forceOpen) && (
           <div
-            ref={panelResultElement}
+            ref={ panelResultElement }
             className='absolute mt-1 w-full z-10 rounded-md bg-white shadow-lg'
           >
             <ul
-              tabIndex={-1}
+              tabIndex={ -1 }
               role='listbox'
               aria-labelledby='listbox-label'
               aria-activedescendant='listbox-item-3'
               className='max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm'
             >
-              {props.items.map((item) => {
+              { props.items.map((item) => {
                 return (
                   <li
-                    key={item.label}
-                    onClick={() => handleLanguageSwitch(item)}
+                    key={ item.label }
+                    onClick={ () => handleLanguageSwitch(item) }
                     id='listbox-item-1'
                     role='option'
-                    className='text-glovooker-chamoisee-100 cursor-default select-none hover:bg-glovooker-chamoisee-100 hover:text-white relative py-2 pl-3 pr-9'
+                    className='text-glovooker-chamoisee-100 cursor-pointer select-none hover:bg-glovooker-chamoisee-100 hover:text-white relative py-2 pl-3 pr-9'
                   >
                     <div className='flex items-center'>
                       <span className='ml-3 block font-normal truncate'>
-                        {t(item.label)}
+                        { t(item.label) }
                       </span>
                     </div>
                   </li>
                 );
-              })}
+              }) }
             </ul>
           </div>
-        )}
+        ) }
       </div>
     </div>
   );

@@ -1,10 +1,11 @@
-import React, { MouseEventHandler, useEffect, useRef, useState } from 'react';
-import { Dropdown } from '../';
-import logo from '../../assets/img/logo.png';
+import { useEffect, useState } from 'react';
+
 import { useTranslation } from 'react-i18next';
+import logo from '../../assets/img/logo.png';
+
+import { Dropdown } from '../';
 import { Link } from 'react-router-dom';
 import LanguageSwitch from '../LanguageSwitch/LanguageSwitch';
-import i18next from 'i18next';
 
 interface Props {
   forceMenuOpenInMobile?: boolean;
@@ -65,7 +66,7 @@ export const Header = (props: Props) => {
   ];
 
   return (
-    <div className='fixed z-40 w-full'>
+    <div className='fixed z-40 w-screen'>
       <nav
         className={ `${ navBackground } ${ props.withShadow ? ' shadow' : '' }${ props.isFat ? ' py-4' : ''
           } ` }
@@ -125,7 +126,7 @@ export const Header = (props: Props) => {
                   </a>
                 ) }
                 { props.ddmItems && (
-                  <div className='ml-3 relative'>
+                  <div className='ml-6 relative'>
                     <Dropdown
                       icon={
                         <svg

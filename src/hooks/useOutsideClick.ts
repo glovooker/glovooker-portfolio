@@ -2,14 +2,14 @@ import { RefObject, useEffect } from 'react';
 
 type Event = MouseEvent | TouchEvent;
 
-export const useOutsideClick = <T extends HTMLElement = HTMLElement>(
+export const useOutsideClick = <T extends HTMLElement = HTMLElement> (
   ref: RefObject<T>,
   handler: (event: Event) => void
 ) => {
   useEffect(() => {
     const listener = (event: Event) => {
-      const el = ref?.current;
-      if (!el || el.contains((event?.target as Node) || null)) {
+      const el = ref.current;
+      if (!el || el.contains(event.target as Node)) {
         return;
       }
 

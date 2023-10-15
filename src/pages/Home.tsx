@@ -1,5 +1,6 @@
 import { useRef } from 'react';
-import withBasicLayout from '../layout/basicLayout';
+
+import { withBasicLayout } from '../layout/basicLayout';
 import AboutMe from '../sections/AboutMe';
 import Hero from '../sections/Hero';
 import Portfolio from '../sections/Portfolio';
@@ -41,18 +42,18 @@ export const Home = () => {
   return (
     <div>
       <Hero
-        reference={heroRef}
-        sectionsRef={sectionsRef}
+        reference={ heroRef }
+        sectionsRef={ sectionsRef }
       />
       <Stats />
       <AboutMe
-        title={'title'}
-        description={['description_1', 'description_2']}
-        reference={aboutMeRef}
-        sectionsRef={sectionsRef}
-        isLeft={true}
+        title={ 'title' }
+        description={ ['description_1', 'description_2'] }
+        reference={ aboutMeRef }
+        sectionsRef={ sectionsRef }
+        isLeft={ true }
       />
-      <Portfolio reference={portfolioRef} />
+      <Portfolio reference={ portfolioRef } />
     </div>
   );
 };

@@ -13,11 +13,11 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      className={`flex items-center py-2 px-4 rounded-lg ${bgColor} border-2 border-transparent text-white text-lg font-circularmedium mr-4`}
-      onClick={onClick}
+      className={ `flex items-center py-2 px-4 rounded-lg ${ bgColor } border-2 border-transparent text-white text-lg font-circularmedium mr-4` }
+      onClick={ onClick }
     >
-      {label}
-      {icon}
+      { label }
+      { icon && <span className="ml-2">{ icon }</span> }
     </button>
   );
 };

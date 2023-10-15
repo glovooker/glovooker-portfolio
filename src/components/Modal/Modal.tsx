@@ -32,13 +32,13 @@ export const Modal = ({ projectIndex, open, onClose }: ModalProps) => {
     <div className='fixed inset-0 flex justify-center z-50'>
       <div className='fixed inset-0 opacity-30 bg-black w-screen h-screen left-0 top-0'></div>
       <div className={ `fixed inset-0 flex justify-center items-center z-50 overflow-x-hidden overflow-y-auto outline-none focus:outline-none cursor-default md:pt-5` }>
-        <div ref={ modalRef } className='relative flex w-10/12 md:w-[70vw] bg-white rounded-2xl shadow-lg p-6 h-[80vh] lg:px-[4vw] lg:py-[4vh] overflow-y-scroll scrollbar-tag'>
+        <div ref={ modalRef } className='relative flex w-10/12 md:w-[70vw] bg-white rounded-2xl shadow-lg py-8 px-2 h-[80vh] lg:p-8 overflow-y-scroll scrollbar-tag'>
           <IconButton
             bgColor="white"
             textColor={ currentProject.textColor }
             icon={ <FiX /> }
             onClick={ onClose }
-            className={ `absolute top-4 right-1` }
+            className={ `absolute top-0 right-0 mr-0 md:top-4 md:right-1` }
           />
           <div className='flex'>
             <div className='lg:grid lg:grid-cols-2 lg:grid-flow-row-dense lg:gap-8 lg:items-center'>

@@ -10,7 +10,7 @@ type AvatarsProps = {
   avatars: Avatar[];
 };
 
-export const Avatars = ({
+const Avatars = ({
   size = 'small',
   withHoverEffect,
   avatars,
@@ -40,3 +40,6 @@ export const Avatars = ({
     </div>
   );
 };
+
+export { Avatars };
+export type { Avatar };

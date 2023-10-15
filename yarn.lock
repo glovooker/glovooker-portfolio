@@ -7360,7 +7360,7 @@ __metadata:
     react-dom: ^18.2.0
     react-feather: ^2.0.10
     react-i18next: ^12.0.0
-    react-icons: ^4.6.0
+    react-icons: ^4.11.0
     react-redux: ^8.0.5
     react-router-dom: ^6.4.3
     react-scripts: 5.0.1
@@ -11258,12 +11258,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-icons@npm:^4.6.0":
-  version: 4.6.0
-  resolution: "react-icons@npm:4.6.0"
+"react-icons@npm:^4.11.0":
+  version: 4.11.0
+  resolution: "react-icons@npm:4.11.0"
   peerDependencies:
     react: "*"
-  checksum: a08375d4563e381e156d826a8d551dd26c1bf7c424a79139173bf4c8df71e884badd7d4f5fe9faa0d73d18ace265bcc89891b65fd8f808812b1011b612ebbc53
+  checksum: 7b8b80bbe2dabcc54b6c2129b7761a04b19caebe24389adc7683478ef41212b9ca0b53c63abcc06b3c01b94c84855ec5142b4c357e19c4aaaad9a4db23a3c485
   languageName: node
   linkType: hard
 

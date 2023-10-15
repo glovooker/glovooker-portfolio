@@ -26,7 +26,7 @@ import {
   SiRedux,
   SiTailwindcss,
   SiJquery,
-  SiMaterialui,
+  SiMui,
 } from 'react-icons/si';
 import { GrMysql } from 'react-icons/gr';
 import { DiJavascript1 } from 'react-icons/di';
@@ -94,7 +94,7 @@ export const tags: TagList = {
     tagName: 'Material UI',
     tagColor: '#0a58ad',
     tagBgColor: 'bg-[#0a58ad]',
-    tagIcon: SiMaterialui,
+    tagIcon: SiMui,
   },
   angular: {
     tagName: 'Angular',

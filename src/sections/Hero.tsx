@@ -1,6 +1,5 @@
 import hero from '../assets/img/about-me.gif';
 import { Button } from '../components/Button/Button';
-import { ChevronDown } from 'react-feather';
 import { TitleLoop } from '../components/TitleLoop/TitleLoop';
 import { useTranslation } from 'react-i18next';
 import { RefObject } from 'react';

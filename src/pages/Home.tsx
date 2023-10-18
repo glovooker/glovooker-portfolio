@@ -18,23 +18,37 @@ export const Home = () => {
   const aboutMeRef = useRef<HTMLElement>(null);
   const portfolioRef = useRef<HTMLElement>(null);
 
+  const headerHeight = 96;
+
   const sectionsRef: SectionsReferences = {
     heroRef: {
       ref: heroRef,
       scrollTo: () => {
-        heroRef.current?.scrollIntoView({ behavior: 'smooth' });
+        const offset = (heroRef.current?.getBoundingClientRect().top ?? 0) - headerHeight;
+        window.scrollTo({
+          top: offset,
+          behavior: 'smooth',
+        });
       },
     },
     aboutMeRef: {
       ref: aboutMeRef,
       scrollTo: () => {
-        aboutMeRef.current?.scrollIntoView({ behavior: 'smooth' });
+        const offset = (aboutMeRef.current?.getBoundingClientRect().top ?? 0) - headerHeight;
+        window.scrollTo({
+          top: offset,
+          behavior: 'smooth',
+        });
       },
     },
     portfolioRef: {
       ref: portfolioRef,
       scrollTo: () => {
-        portfolioRef.current?.scrollIntoView({ behavior: 'smooth' });
+        const offset = (portfolioRef.current?.getBoundingClientRect().top ?? 0) - headerHeight;
+        window.scrollTo({
+          top: offset,
+          behavior: 'smooth',
+        });
       },
     },
   };

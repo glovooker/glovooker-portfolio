@@ -39,4 +39,5 @@ jobs:
               uses: peaceiris/actions-gh-pages@v3
               with:
                   github_token: ${{ secrets.GLOVOOKER_TOKEN }}
-                  publish_dir: ./dist # Change to your build directory
+                  publish_dir: ./dist
+                  keep_files: true # Keep existing files on GitHub Pages

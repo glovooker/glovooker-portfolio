@@ -3,10 +3,6 @@ import { TitleLoop } from '../components/TitleLoop/TitleLoop';
 import { useTranslation } from 'react-i18next';
 import { RefObject } from 'react';
 import { SectionsReferences } from '../pages/Home';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { IconButton } from '../components';
-import VideoEmbed from '../components/InterviewPreview/InterviewPreview';
-import YouTubeEmbed from '../components/InterviewPreview/InterviewPreview';
 import InterviewPreview from '../components/InterviewPreview/InterviewPreview';
 
 interface Props {
@@ -46,16 +42,6 @@ const Hero: React.FC<Props> = (props) => {
                                 label={ t('my_projects').toString() }
                                 bgColor="bg-glovooker-green-100"
                                 onClick={ props.sectionsRef.portfolioRef.scrollTo }
-                            />
-                            <IconButton
-                                onClick={ () => window.open('https://github.com/glovooker') }
-                                bgColor="bg-[#171515]"
-                                icon={ <FaGithub className="h-8 w-8" /> }
-                            />
-                            <IconButton
-                                onClick={ () => window.open('https://www.linkedin.com/in/glovooker/') }
-                                bgColor="bg-[#0077B5]"
-                                icon={ <FaLinkedin className="h-8 w-8" /> }
                             />
                         </div>
                     </div>

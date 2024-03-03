@@ -34,9 +34,9 @@ const AboutMe: React.FC<AboutMeProps> = (props) => {
         <section
             id="about"
             ref={ props.reference }
-            className="bg-glovooker-green-100 overflow-hidden relative lg:flex lg:items-center"
+            className="bg-glovooker-green-100 overflow-hidden relative flex flex-col lg:flex-row lg:items-center"
         >
-            <div className="py-12 px-16 md:px-8 lg:py-20 lg:px-20 z-20 justify-center w-1/2">
+            <div className="py-12 px-16 md:px-8 lg:py-20 lg:px-20 z-20 justify-center lg:w-1/2">
                 <h2 className="text-3xl md:text-4xl font-circularblack text-white mb-10 max-w-3xl">
                     <span className="block">{ t(props.title) }</span>
                 </h2>
@@ -51,7 +51,7 @@ const AboutMe: React.FC<AboutMeProps> = (props) => {
                 </div>
             </div>
 
-            <div className="flex items-center p-8 lg:p-24 justify-center w-1/2">
+            <div className="flex items-center p-8 lg:p-24 justify-center lg:w-1/2">
                 <img src={ aboutMe1 } className="rounded-lg 3xl:w-1/2" alt="Tree" />
                 {/* <div>
                     <img src={ aboutMe3 } className="rounded-lg mb-8" alt="Tree" />

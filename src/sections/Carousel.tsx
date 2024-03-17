@@ -20,7 +20,7 @@ const Carousel: FC = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 5, // Default for large screens
+        slidesToShow: 3, // Default for large screens
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -30,29 +30,17 @@ const Carousel: FC = () => {
             {
                 breakpoint: 2560, // Ultra wide monitors
                 settings: {
-                    slidesToShow: 5,
-                },
-            },
-            {
-                breakpoint: 1440, // Large screens, smaller monitors
-                settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 3,
                 },
             },
             {
                 breakpoint: 1024, // Small monitors, large tablets
                 settings: {
-                    slidesToShow: 3,
-                },
-            },
-            {
-                breakpoint: 768, // Tablets
-                settings: {
                     slidesToShow: 2,
                 },
             },
             {
-                breakpoint: 480, // Mobile devices in landscape and larger phones in portrait
+                breakpoint: 700, // Mobile devices in landscape and larger phones in portrait
                 settings: {
                     slidesToShow: 1,
                 },

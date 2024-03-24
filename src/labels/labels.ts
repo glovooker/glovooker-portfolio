@@ -36,6 +36,14 @@ const resources = {
             description:
                 'Estos son algunos de los proyectos en los que he trabajado. ¡Haz click en cualquiera de ellos para ver más detalles!',
         },
+        contact: {
+            title: 'Contacto',
+            description: '¡Si tienes alguna pregunta, no dudes en contactarme!',
+            name: 'Nombre',
+            email: 'Correo electrónico',
+            message: 'Mensaje',
+            contact_me: '¡Contáctame!',
+        },
         projects: {
             check_it_out: '¡Míralo aquí!',
             engage360: {
@@ -184,6 +192,14 @@ const resources = {
             title: 'Portfolio',
             description:
                 'These are some of the projects I have worked on. Check them out!',
+        },
+        contact: {
+            title: 'Contact',
+            description: 'Feel free to contact me if you have any questions!',
+            name: 'Name',
+            email: 'Email',
+            message: 'Message',
+            contact_me: 'Contact me!',
         },
         projects: {
             check_it_out: 'Check this out!',

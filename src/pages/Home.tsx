@@ -1,10 +1,13 @@
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
+import { FiArrowUpCircle } from "react-icons/fi";
 import { withBasicLayout } from '../layout/basicLayout';
 import AboutMe from '../sections/AboutMe';
 import Hero from '../sections/Hero';
 import Portfolio from '../sections/Portfolio';
 import Carousel from '../sections/Carousel';
+import Contact from '../sections/Contact';
+import { Button } from '../components';
 
 export type SectionsReferences = {
     [key: string]: {
@@ -14,9 +17,13 @@ export type SectionsReferences = {
 };
 
 export const Home = () => {
+    const [showButton, setShowButton] = useState(false);
+
+
     const heroRef = useRef<HTMLElement>(null);
     const aboutMeRef = useRef<HTMLElement>(null);
     const portfolioRef = useRef<HTMLElement>(null);
+    const contactRef = useRef<HTMLElement>(null);
 
     const headerHeight = 96;
 
@@ -51,7 +58,34 @@ export const Home = () => {
                 });
             },
         },
+        contactRef: {
+            ref: contactRef,
+            scrollTo: () => {
+                const offset = (contactRef.current?.getBoundingClientRect().top ?? 0) - headerHeight;
+                window.scrollTo({
+                    top: offset,
+                    behavior: 'smooth',
+                });
+            },
+        },
     };
+
+    useEffect(() => {
+        const checkScrollPosition = () => {
+            if (window.scrollY > 90) {
+                setShowButton(true);
+            } else {
+                setShowButton(false);
+            }
+        };
+
+        window.addEventListener('scroll', checkScrollPosition);
+
+        // Clean up the event listener when the component is unmounted
+        return () => {
+            window.removeEventListener('scroll', checkScrollPosition);
+        };
+    }, []);
 
     return (
         <div>
@@ -68,6 +102,16 @@ export const Home = () => {
                 isLeft={ true }
             />
             <Portfolio reference={ portfolioRef } />
+            <Contact reference={ contactRef } sectionsRef={ sectionsRef } />
+
+            { showButton && (
+                <Button
+                    isFloating={ true }
+                    bgColor="bg-glovooker-chamoisee-100"
+                    icon={ <FiArrowUpCircle className="h-8 w-8" /> }
+                    onClick={ () => window.scrollTo({ top: 0, behavior: 'smooth' }) }
+                />
+            ) }
         </div>
     );
 };

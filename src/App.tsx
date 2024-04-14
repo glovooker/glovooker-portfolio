@@ -1,28 +1,26 @@
 import { useEffect } from 'react';
+import faviconLight from './assets/favicon.ico';
+import faviconDark from './assets/favicon_dark.ico';
 import Routing from './Routing';
 
 export default function App () {
 
     useEffect(() => {
-        const faviconLink = document.createElement('link');
+        const faviconLink = document.getElementById('favicon') as HTMLLinkElement || document.createElement('link');
         faviconLink.rel = 'icon';
         faviconLink.id = 'favicon';
-
-        faviconLink.href = window.matchMedia('(prefers-color-scheme: dark)').matches
-            ? '/favicon.ico'
-            : '/favicon_dark.ico';
-
         document.head.appendChild(faviconLink);
 
-        const changeFavicon = (e: MediaQueryListEvent) => {
-            faviconLink.href = e.matches ? '/favicon.ico' : '/favicon_dark.ico';
+        const setFavicon = () => {
+            faviconLink.href = window.matchMedia('(prefers-color-scheme: dark)').matches ? faviconLight : faviconDark;
         };
 
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', changeFavicon);
+        setFavicon();
 
-        return () => {
-            window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', changeFavicon);
-        };
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        mediaQuery.addEventListener('change', setFavicon);
+
+        return () => mediaQuery.removeEventListener('change', setFavicon);
     }, []);
 
     return <Routing />;

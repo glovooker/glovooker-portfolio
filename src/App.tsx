@@ -10,7 +10,7 @@ export default function App () {
             const mediaQuery: MediaQueryList = window.matchMedia('(prefers-color-scheme: dark)');
 
             const handleChange: () => void = () => {
-                favicon.href = mediaQuery.matches ? '../favicon.ico' : '../favicon_dark.ico';
+                favicon.href = mediaQuery.matches ? '/favicon.ico' : '/favicon_dark.ico';
             };
 
             handleChange();

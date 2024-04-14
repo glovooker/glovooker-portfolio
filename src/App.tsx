@@ -4,21 +4,25 @@ import Routing from './Routing';
 export default function App () {
 
     useEffect(() => {
-        const favicon: HTMLLinkElement | null = document.getElementById('favicon') as HTMLLinkElement;
+        const faviconLink = document.createElement('link');
+        faviconLink.rel = 'icon';
+        faviconLink.id = 'favicon';
 
-        if (favicon) {
-            const mediaQuery: MediaQueryList = window.matchMedia('(prefers-color-scheme: dark)');
+        faviconLink.href = window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? '/favicon.ico'
+            : '/favicon_dark.ico';
 
-            const handleChange: () => void = () => {
-                favicon.href = mediaQuery.matches ? '/favicon.ico' : '/favicon_dark.ico';
-            };
+        document.head.appendChild(faviconLink);
 
-            handleChange();
+        const changeFavicon = (e: MediaQueryListEvent) => {
+            faviconLink.href = e.matches ? '/favicon.ico' : '/favicon_dark.ico';
+        };
 
-            mediaQuery.addListener(handleChange);
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', changeFavicon);
 
-            return () => mediaQuery.removeListener(handleChange);
-        }
+        return () => {
+            window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', changeFavicon);
+        };
     }, []);
 
     return <Routing />;

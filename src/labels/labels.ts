@@ -26,15 +26,16 @@ const resources = {
             stats_4: 'Pull Requests',
         },
         about_me: {
-            title: `👋🏻 Soy un Ingeniero de Software con complejo de Diseñador`,
+            title: `👋🏻 Soy un Ingeniero de Software Senior con Gran Pasión por la Tecnología`,
             description_1: `En realidad, amo tanto el mundo creativo como el lógico, ya que ambos convergen en la tecnología. Toda buena idea tiene un back-end y un front-end esperando por ser creado, y ambos son igual de emocionantes para mí.`,
-            description_2: `Como fan de la tecnología y del conocimiento, si tienes una idea que pueda benificiarse de mis habilidades para hacerse realidad, te invito a revisar mi currículum. ¡Siéntete libre de contactarme tan pronto como lo desees!`,
-            view_resume: 'Ver Resume',
+            description_2: `Como fan de la tecnología y del conocimiento, si tienes una idea que pueda benificiarse de mis habilidades para hacerse realidad, te invito a revisar mi currículum.`,
+            description_3: `¡Siéntase libre de contactarme tan pronto como lo desea!`,
+            view_resume: 'Ingresa a mi Resume',
         },
         portfolio: {
             title: 'Portafolio',
             description:
-                'Estos son algunos de los proyectos en los que he trabajado. ¡Haz click en cualquiera de ellos para ver más detalles!',
+                'Estos son algunos de los proyectos en los que he trabajado. ¡Explóralos a continuación!',
         },
         contact: {
             title: 'Contacto',
@@ -183,9 +184,10 @@ const resources = {
             stats_4: 'Pull Requests',
         },
         about_me: {
-            title: `👋🏻 I'm a Software Engineer with a Designer complex`,
+            title: `👋🏻 I'm a Software Engineer with Big Passion for Technology`,
             description_1: `As a matter of fact, I love both logical and creative worlds that merge together through tech. Every good idea has a back-end and a front-end waiting to be developed, and both of them are as breathtaking as the other to me.`,
-            description_2: `As a fan of technology and knowledge, if you have an idea that could use my abilities to come to reality, feel free to check out my CV and reach out to me as soon as you feel like it!`,
+            description_2: `As a fan of technology and knowledge, if you have an idea that could use my abilities to come to reality, feel free to check out my CV.`,
+            description_3: `Don't forget to contact me as soon as you want!`,
             view_resume: 'View Resume',
         },
         portfolio: {

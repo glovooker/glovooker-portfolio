@@ -96,7 +96,7 @@ export const Home = () => {
             <Carousel />
             <AboutMe
                 title={ 'title' }
-                description={ ['description_1', 'description_2'] }
+                description={ ['description_1', 'description_2', 'description_3'] }
                 reference={ aboutMeRef }
                 sectionsRef={ sectionsRef }
                 isLeft={ true }

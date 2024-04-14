@@ -23,7 +23,7 @@ const AboutMe: React.FC<AboutMeProps> = (props) => {
         return props.description?.map((description, index) => (
             <p
                 key={ `description_${ index + 1 }` }
-                className="text-base md:text-lg mt-4 text-white"
+                className={ `text-base md:text-lg mt-4 text-white ${ index === 2 ? 'font-bold' : '' }` }
             >
                 { t(description) }
             </p>

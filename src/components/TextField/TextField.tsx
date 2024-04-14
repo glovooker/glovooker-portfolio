@@ -6,9 +6,10 @@ type TextFieldProps = {
     name: string;
     onChange: (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
     isTextArea?: boolean;
+    isRequired?: boolean;
 };
 
-const TextField: React.FC<TextFieldProps> = ({ label, value, name, onChange, isTextArea = false }) => {
+const TextField: React.FC<TextFieldProps> = ({ label, value, name, onChange, isTextArea = false, isRequired = false }) => {
     return (
         <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2">{ label }</label>
@@ -18,6 +19,7 @@ const TextField: React.FC<TextFieldProps> = ({ label, value, name, onChange, isT
                     defaultValue={ value }
                     name={ name }
                     onChange={ onChange }
+                    required={ isRequired }
                 />
             ) : (
                 <input
@@ -26,6 +28,7 @@ const TextField: React.FC<TextFieldProps> = ({ label, value, name, onChange, isT
                     defaultValue={ value }
                     name={ name }
                     onChange={ onChange }
+                    required={ isRequired }
                 />
             ) }
         </div>

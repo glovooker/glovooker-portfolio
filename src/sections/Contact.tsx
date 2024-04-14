@@ -67,9 +67,9 @@ const Contact: React.FC<ContactProps> = (props) => {
                     { t('description') }
                 </p>
                 <form onSubmit={ handleSubmit }>
-                    <TextField label={ t('name').toString() } name={ 'name' } value={ toSend.name } onChange={ handleChange } />
-                    <TextField label={ t('email').toString() } name={ 'email' } value={ toSend.email } onChange={ handleChange } />
-                    <TextField label={ t('message').toString() } name={ 'message' } value={ toSend.message } isTextArea={ true } onChange={ handleChange } />
+                    <TextField label={ t('name').toString() } name={ 'name' } value={ toSend.name } onChange={ handleChange } isRequired />
+                    <TextField label={ t('email').toString() } name={ 'email' } value={ toSend.email } onChange={ handleChange } isRequired />
+                    <TextField label={ t('message').toString() } name={ 'message' } value={ toSend.message } isTextArea={ true } onChange={ handleChange } isRequired />
                     <Button
                         label={ t('contact_me').toString() }
                         bgColor="bg-glovooker-chamoisee-100"

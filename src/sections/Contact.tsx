@@ -72,7 +72,6 @@ const Contact: React.FC<ContactProps> = (props) => {
                     <TextField label={ t('message').toString() } name={ 'message' } value={ toSend.message } isTextArea={ true } onChange={ handleChange } isRequired />
                     <Button
                         label={ t('contact_me').toString() }
-                        bgColor="bg-glovooker-chamoisee-100"
                         icon={ <FiSend className="ml-2 h-5 w-5" /> }
                         type={ 'submit' }
                     />

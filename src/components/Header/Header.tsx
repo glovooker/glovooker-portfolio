@@ -82,7 +82,7 @@ export const Header = (props: Props) => {
                                 to={ '.' }
                             >
                                 <img
-                                    className='h-12 w-12 bg-gradient-to-t from-glovooker-blue-100 to-glovooker-green-100'
+                                    className='h-12 w-12'
                                     src={ logo }
                                     alt={ `${ t('logo_alt') }` }
                                 />

@@ -107,7 +107,6 @@ export const Home = () => {
             { showButton && (
                 <Button
                     isFloating={ true }
-                    bgColor="bg-glovooker-chamoisee-100"
                     icon={ <FiArrowUpCircle className="h-8 w-8" /> }
                     onClick={ () => window.scrollTo({ top: 0, behavior: 'smooth' }) }
                 />

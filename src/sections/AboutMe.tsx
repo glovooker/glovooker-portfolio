@@ -23,7 +23,7 @@ const AboutMe: React.FC<AboutMeProps> = (props) => {
         return props.description?.map((description, index) => (
             <p
                 key={ `description_${ index + 1 }` }
-                className={ `text-base md:text-lg mt-4 text-white ${ index === 2 ? 'font-bold' : '' }` }
+                className={ `text-base md:text-lg mt-4 text-glovooker-green-100 ${ index === 2 ? 'font-bold' : '' }` }
             >
                 { t(description) }
             </p>
@@ -34,17 +34,16 @@ const AboutMe: React.FC<AboutMeProps> = (props) => {
         <section
             id="about"
             ref={ props.reference }
-            className="bg-glovooker-green-100 overflow-hidden relative flex flex-col lg:flex-row lg:items-center"
+            className="bg-white overflow-hidden relative flex flex-col lg:flex-row lg:items-center"
         >
             <div className="py-12 px-16 md:px-8 lg:py-20 lg:px-20 z-20 justify-center lg:w-1/2">
-                <h2 className="text-3xl md:text-4xl font-circularblack text-white mb-10 max-w-3xl">
+                <h2 className="text-3xl md:text-4xl font-circularblack text-glovooker-green-100 mb-10 max-w-3xl">
                     <span className="block">{ t(props.title) }</span>
                 </h2>
                 { renderDescription() }
                 <div className="flex mt-5 sm:mt-10">
                     <Button
                         label={ t('view_resume').toString() }
-                        bgColor="bg-glovooker-chamoisee-100"
                         icon={ <FiExternalLink className="ml-2 h-5 w-5" /> }
                         onClick={ () => window.open('https://drive.google.com/file/d/1RCFSEzpYfF0TRMQGtc1n6efWuFbFoNdw/view?usp=sharing') }
                     />

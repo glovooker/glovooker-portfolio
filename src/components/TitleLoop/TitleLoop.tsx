@@ -14,7 +14,7 @@ export const TitleLoop = () => {
     ];
 
     return (
-        <div className='font-circularbold mt-2 text-xl sm:text-3xl bg-gradient-to-t from-glovooker-blue-100 to-glovooker-green-100 text-transparent bg-clip-text'>
+        <div className='font-circularbold mt-2 text-xl md:text-lg lg:text-3xl bg-gradient-to-t from-glovooker-blue-100 to-glovooker-green-100 text-transparent bg-clip-text'>
             <Typewriter
                 options={ {
                     strings: titles,

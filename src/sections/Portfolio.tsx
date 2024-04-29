@@ -12,11 +12,11 @@ const Portfolio: React.FC<PortfolioProps> = ({ withSearch = false, reference }) 
     const { t } = useTranslation('portfolio');
 
     return (
-        <section ref={ reference } id='portfolio' className="w-full bg-glovooker-blue-100 p-10">
+        <section ref={ reference } id='portfolio' className="w-full bg-white p-10">
             <div className="header font-circularblack flex items-end justify-between mb-12">
                 <div className="title">
-                    <p className="text-5xl font-bold text-white mb-4">{ t('title') }</p>
-                    <p className="text-lg font-circular text-white">{ t('description') }</p>
+                    <p className="text-5xl font-bold text-glovooker-blue-100 mb-4">{ t('title') }</p>
+                    <p className="text-lg font-circular text-glovooker-blue-100">{ t('description') }</p>
                 </div>
                 {/* {props.withSearch && (
           <div className='text-end'>

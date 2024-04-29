@@ -55,7 +55,7 @@ const Carousel: FC = () => {
                 <Slider { ...settings }>
                     { logos.map((logo, index) => (
                         <div key={ index } className="px-2 flex justify-center items-center h-full">
-                            <img src={ logo.src } alt={ logo.alt } className='mx-auto' />
+                            <img src={ logo.src } alt={ logo.alt } className='mx-auto filter grayscale opacity-50' />
                         </div>
                     )) }
                 </Slider>

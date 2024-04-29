@@ -15,7 +15,7 @@ const TextField: React.FC<TextFieldProps> = ({ label, value, name, onChange, isT
             <label className="block text-gray-700 text-sm font-bold mb-2">{ label }</label>
             { isTextArea ? (
                 <textarea
-                    className="shadow border appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="shadow-sm border-2 appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     defaultValue={ value }
                     name={ name }
                     onChange={ onChange }
@@ -23,7 +23,7 @@ const TextField: React.FC<TextFieldProps> = ({ label, value, name, onChange, isT
                 />
             ) : (
                 <input
-                    className="shadow border appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="shadow-sm border-2 appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     type="text"
                     defaultValue={ value }
                     name={ name }

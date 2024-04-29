@@ -52,7 +52,7 @@ const LanguageSwitch = (props: Props) => {
                     type='button'
                     ref={ selectButton }
                     onClick={ () => setShowList(!showList) }
-                    className='relative w-full bg-transparent rounded-md pl-3 pr-10 py-3 text-right border-2 border-white text-white focus:border-gray-300 focus:text-gray-300 cursor-pointer sm:text-md'
+                    className='relative w-full bg-transparent rounded-md pl-3 pr-10 py-3 text-right border-2 border-gray-300 text-gray-300 cursor-pointer sm:text-md'
                 >
                     <span className='flex items-center justify-center'>
                         <span className='ml-3 block truncate'>
@@ -61,7 +61,7 @@ const LanguageSwitch = (props: Props) => {
                     </span>
                     <span className='ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none'>
                         <svg
-                            className='h-5 w-5 text-white focus:text-gray-300'
+                            className='h-5 w-5 text-gray-300'
                             xmlns='http://www.w3.org/2000/svg'
                             viewBox='0 0 20 20'
                             fill='currentColor'
@@ -79,7 +79,7 @@ const LanguageSwitch = (props: Props) => {
                 { (showList || props.forceOpen) && (
                     <div
                         ref={ panelResultElement }
-                        className='absolute mt-1 w-full z-10 rounded-md bg-white shadow-lg'
+                        className='absolute mt-1 w-full z-10 rounded-sm bg-white shadow-md'
                     >
                         <ul
                             tabIndex={ -1 }
@@ -95,7 +95,7 @@ const LanguageSwitch = (props: Props) => {
                                         onClick={ () => handleLanguageSwitch(item) }
                                         id='listbox-item-1'
                                         role='option'
-                                        className='text-glovooker-chamoisee-100 cursor-pointer select-none hover:bg-glovooker-chamoisee-100 hover:text-white relative py-2 pl-3 pr-9'
+                                        className='text-gray-300 cursor-pointer select-none hover:bg-gray-200 hover:text-white relative py-2 pl-3 pr-9'
                                     >
                                         <div className='flex items-center'>
                                             <span className='ml-3 block font-normal truncate'>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { useTranslation } from 'react-i18next';
-import logo from '../../assets/img/logo.png';
+import logo from '../../assets/img/logo.svg';
 
 import { Dropdown } from '../';
 import { Link } from 'react-router-dom';
@@ -44,7 +44,7 @@ export const Header = (props: Props) => {
             const show = window.scrollY > 10;
             if (show) {
                 setNavBackground(
-                    'transition ease-in-out delay-50 bg-glovooker-blue-100'
+                    'transition ease-in-out delay-50 backdrop-blur-sm'
                 );
             } else {
                 setNavBackground('transition ease-in-out delay-50 bg-transparent');
@@ -82,7 +82,7 @@ export const Header = (props: Props) => {
                                 to={ '.' }
                             >
                                 <img
-                                    className='h-12 w-12'
+                                    className='h-12 w-12 bg-gradient-to-t from-glovooker-blue-100 to-glovooker-green-100'
                                     src={ logo }
                                     alt={ `${ t('logo_alt') }` }
                                 />

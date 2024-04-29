@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { SectionsReferences } from '../pages/Home';
 import { Button } from '../components/Button/Button';
 import { FiExternalLink } from 'react-icons/fi';
+import InterviewPreview from '../components/InterviewPreview/InterviewPreview';
 
 interface AboutMeProps {
     title: string;
@@ -13,8 +14,7 @@ interface AboutMeProps {
 }
 
 const aboutMe1 = 'https://res.cloudinary.com/glovooker/image/upload/v1702802155/portfolio/about_me_1.jpg';
-const aboutMe2 = 'https://res.cloudinary.com/glovooker/image/upload/v1702798842/portfolio/about-me-2.gif';
-const aboutMe3 = 'https://res.cloudinary.com/glovooker/image/upload/v1702798842/portfolio/about-me-3.gif';
+const hero = 'https://res.cloudinary.com/glovooker/image/upload/v1702805583/portfolio/about-me.gif';
 
 const AboutMe: React.FC<AboutMeProps> = (props) => {
     const { t } = useTranslation('about_me');
@@ -52,11 +52,7 @@ const AboutMe: React.FC<AboutMeProps> = (props) => {
             </div>
 
             <div className="flex items-center p-8 lg:p-24 justify-center lg:w-1/2">
-                <img src={ aboutMe1 } className="rounded-lg 3xl:w-1/2" alt="Tree" />
-                {/* <div>
-                    <img src={ aboutMe3 } className="rounded-lg mb-8" alt="Tree" />
-                    <img src={ aboutMe2 } className="rounded-lg" alt="Tree" />
-                </div> */}
+                <InterviewPreview preview={ hero } />
             </div>
         </section>
     );

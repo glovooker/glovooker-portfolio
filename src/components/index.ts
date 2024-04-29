@@ -6,3 +6,4 @@ export * from './LanguageSwitch/LanguageSwitch';
 export * from './Modal/Modal';
 export * from './ProjectCard/ProjectCard';
 export * from './TitleLoop/TitleLoop';
+export * from './InterviewPreview/InterviewPreview';

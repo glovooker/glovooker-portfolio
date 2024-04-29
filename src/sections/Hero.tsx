@@ -3,14 +3,12 @@ import { TitleLoop } from '../components/TitleLoop/TitleLoop';
 import { useTranslation } from 'react-i18next';
 import { RefObject } from 'react';
 import { SectionsReferences } from '../pages/Home';
-import InterviewPreview from '../components/InterviewPreview/InterviewPreview';
+import { InteractiveBadge } from '../components/InteractiveBadge/InteractiveBadge';
 
 interface Props {
     reference: RefObject<HTMLElement>;
     sectionsRef: SectionsReferences;
 }
-
-const hero = 'https://res.cloudinary.com/glovooker/image/upload/v1702805583/portfolio/about-me.gif';
 
 const Hero: React.FC<Props> = (props) => {
     const { t } = useTranslation('home');
@@ -19,15 +17,15 @@ const Hero: React.FC<Props> = (props) => {
         <section
             id="hero"
             ref={ props.reference }
-            className="bg-gradient-to-tr from-glovooker-blue-100 to-glovooker-green-100 flex relative z-20 items-center justify-center overflow-hidden h-screen"
+            className="bg-white flex relative z-20 items-center justify-center overflow-hidden h-screen"
         >
-            <div className="container mx-auto px-8 flex flex-col lg:flex-row justify-center relative py-16">
-                <div className="block w-7/12 mt-20 mx-auto lg:hidden relative">
-                    <InterviewPreview preview={ hero } />
-                </div>
-                <div className="sm:w-2/3 lg:w-2/5 flex flex-col relative z-20 mt-12">
-                    <span className="w-20 h-2 bg-white mb-12"></span>
-                    <h1 className="font-circularblack text-5xl lg:text-7xl 2xl:text-8xl font-black flex flex-col leading-none text-white">
+            <div className="hidden md:flex container mx-auto px-8 flex-col lg:flex-row justify-center relative py-16">
+                {/* <div className="block w-7/12 mt-20 mx-auto lg:hidden relative">
+                    <InteractiveBadge />
+                </div> */}
+                <div className="sm:w-2/3 lg:w-5/6 flex flex-col relative z-20 mt-12">
+                    <span className="w-20 h-2 bg-gradient-to-r from-glovooker-blue-100 to-glovooker-green-100 mb-12"></span>
+                    <h1 className="font-circularblack text-5xl lg:text-7xl 2xl:text-8xl font-black flex flex-col leading-none bg-gradient-to-t from-glovooker-blue-100 to-glovooker-green-100 text-transparent bg-clip-text">
                         Gabriel Lobo
                     </h1>
                     <TitleLoop />
@@ -46,9 +44,9 @@ const Hero: React.FC<Props> = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className="hidden lg:block lg:w-1/2 relative">
-                    <InterviewPreview preview={ hero } />
-                </div>
+            </div>
+            <div className="block lg:w-full lg:h-full absolute z-50 md:left-96">
+                <InteractiveBadge />
             </div>
         </section>
     );

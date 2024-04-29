@@ -43,7 +43,7 @@ const Hero: React.FC<Props> = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="block w-1/2 xl:w-full h-full relative z-20">
+            <div className="block w-full md:w-1/2 lg:1/2 xl:w-full h-full relative z-20">
                 <InteractiveBadge />
             </div>
         </section>

@@ -1913,12 +1913,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-slick@npm:^0.23.12":
-  version: 0.23.12
-  resolution: "@types/react-slick@npm:0.23.12"
+"@types/react-slick@npm:^0.23.13":
+  version: 0.23.13
+  resolution: "@types/react-slick@npm:0.23.13"
   dependencies:
     "@types/react": "npm:*"
-  checksum: 10/5f9934e174046e0a556153b5f68acc12176c8cb8ce7049e407d7d68bf7fed1b45f371b35d13d740fec3158407d2feb38412ab4b925335f34183822660b6e40a3
+  checksum: 10/3e363220dd7efb7eb9d60aec80588365ddffb366cc75307b86ce83d84e6664d9a66edc9d796cc0b4f87bfd217fa912d4005a00c2a87c41b36fbe4412ae7a15a7
   languageName: node
   linkType: hard
 
@@ -3305,7 +3305,7 @@ __metadata:
     "@types/react-dom": "npm:^18.0.8"
     "@types/react-is": "npm:^19"
     "@types/react-redux": "npm:^7.1.24"
-    "@types/react-slick": "npm:^0.23.12"
+    "@types/react-slick": "npm:^0.23.13"
     "@types/react-typist": "npm:^2.0.3"
     "@types/styled-components": "npm:^5.1.34"
     "@types/three": "npm:^0.164.0"

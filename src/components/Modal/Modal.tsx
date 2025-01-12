@@ -1,6 +1,5 @@
 import { useRef } from 'react';
 
-import { Animated } from "react-animated-css";
 import { FiX, FiExternalLink } from 'react-icons/fi';
 import { FaGithub, FaFigma } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
@@ -37,7 +36,6 @@ export const Modal = ({ projectIndex, open, onClose }: ModalProps) => {
     }
 
     return open ? (
-        // <Animated animationIn='slideInUp' animationOut='fadeOut' isVisible={ true }>
         <div className='fixed inset-0 flex justify-center z-50'>
             <div className='fixed inset-0 opacity-30 bg-black w-screen h-screen left-0 top-0'></div>
             <div className={ `fixed inset-0 flex justify-center items-center z-50 overflow-x-hidden overflow-y-auto outline-none focus:outline-none cursor-default md:pt-5` }>
@@ -165,6 +163,5 @@ export const Modal = ({ projectIndex, open, onClose }: ModalProps) => {
                 </div>
             </div>
         </div>
-        // </Animated>
     ) : null;
 };
